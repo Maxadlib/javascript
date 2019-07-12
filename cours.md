@@ -8,8 +8,10 @@
 - ctrl + maj + i = outil de développement dans chrome
 
 ## Chapitre 2 - Connaître les principales syntaxes de Javascript
+<<<<<<< Updated upstream
 - Début de vidéo ["Découvrir la structure de Javascript"](https://www.linkedin.com/learning/l-essentiel-de-javascript/decouvrir-la-structure-de-javascript?u=42107057 "Lien vers la vidéo")
 - Javascript est un language compilé qui n'a pas besoin d'interprétation avant d'arriver au navigateur
+- Le Javascript est un code interprété, et non compilé(C++, Java...)
 - Javascript est SENSIBLE à LA CASSE !
 - Il vaut mieux mettre une instruction par ligne (ex : les "alerte" )
 - Terminer l'instruction par un ;
@@ -25,12 +27,19 @@
 - Error `console.error("Message envoyé");`
 - Pour info `console.log` n'est pas une fonctionnalité officielle de Javascript
 - Les variables permettent de stocker une ou plusieurs données
-- Pour créer des variables en JS, il suffit de *déclarer* `var nomDeLaVariable;`
-- Puis il faut l'*initialiser* `nomDeLaVariable = "valeur";`
+- Pour créer des variables en JS, il suffit de **déclarer** `var nomDeLaVariable;`
+- Puis il faut l'**initialiser** `nomDeLaVariable = "valeur";`
 - On peut le faire en une ligne `var nomDeLaVariable = "valeur";`
 - `var`n'est pas obligatoire pour déclarer une variable mais il vaut mieux le faire tout le temps
 - Pas d'espace, de tirets6, dans le nom des variables 
 - On peut utiliser `_`,`$`, des nombres mais pas en début de variable
+- une variable peut contenir plusieurs genre de variable (chaîne de caractère, boléen, nombre, date...) au cours de sa vie
+- les opérations de multiplications et divisions sont prioritaires aux additions et soustractions. Sinon il faut mettre des parenthèses. 
+- Il ne faut pas confondre les parenthèses et les accolades.`if(amount > 1000){console.log("Amount est supérieur à 1000");}`
+- Si il n'y a qu'un seule ligne de code exécuté après la condition, il n'est pas obligatoire d'avoir les accolades. Il est préférable de toujours les mettre.
+- **Opérateur ternaire : 3 parties :la question, la réponse si vrai, et la réponse si faux**
+- NaN = Not a Number
+- Attention, une variable créée dans une fonction n'est disponible qu'à l'intérieur de cette fonction. Pour qu'elle soit disponible partout il faut la déclarer en dehors `var a=1, b=2, result` (<-variable gobale) C'est la portée de la variable, le scope.
   
   
   
@@ -43,13 +52,10 @@
   
   
   
-  
-  
-  
-  
-  
-  
+    
+-----------  
 ## Markdown code
+[Markdown sur OpenClassroom](https://openclassrooms.com/fr/courses/1304236-redigez-en-markdown "markdown sur openclassroom")  
 *Emphasize* _emphasize_  
 **Strong** __Strong__  
 A [link](http://example.com "Title").  
