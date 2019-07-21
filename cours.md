@@ -61,8 +61,19 @@
 - Conseil : consulter documentation en ligne sur ce qui est possible de faire avec les différentes propriétés et méthodes des Array.
 - Dans les chaînes de caractères, le `\` permet d'échapper le caractère spécial `'` ou `"`.
 - Conseil : Consulter [objet string sur w3school](https://www.w3schools.com/jsref/jsref_obj_string.asp "je consulte") Mais aussi pour les autres types d'objets !
-  
-  
+## Chapitre 4 - Découvrir le Document Object Model
+- *Document* : C'est la page web. Le javascript comprend la page web comme une collection d'objets.
+- *Object* : `array`, `nombre`, `date`... ça peut être un titre de niveau 1, une liste.
+- *Model* : Le modèle est une convention, un jeu de termes et de procédures auxquelles on adhère tous. Le `html` est comme un arbre, avec `head` qui contient `title`, et `body` qui contient `h1`, `p`, `ul`... Chaque élément de cet arbre est appelé un noeud, *node* en anglais. `P` est l'*enfant* de `body`, et le `body` est le *parent* de `p`.
+- Le *DOM* est une convention qui permet de manipuler une page web.
+- Dans outils de développement, aller dans Elements, onglet Properties à droite :
+    - childNodes révèle les enfants de l'élément. length : 1 veut dire qu'il y a un enfant.
+    - nodeType : 3 veut dire que c'est un élément de typer texte. 1 veut dire élément.
+- `setAttribute` permet de créer ou remplacer un attribut. par exemple : `mainContent.setAttribute("align","right");` 
+- `createElement` permet de créer des noeuds de type élément (de type 1)
+- `createTextNode` permet de créer des noeuds de type texte (de type 3)
+- `appendChild` permet de créer un enfant à un élément. exemple :`document.getElementById("trivia").appendChild(newHeading);`
+
   
   
   
