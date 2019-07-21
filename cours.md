@@ -36,16 +36,31 @@
 - une variable peut contenir plusieurs genre de variable (chaîne de caractère, boléen, nombre, date...) au cours de sa vie
 - les opérations de multiplications et divisions sont prioritaires aux additions et soustractions. Sinon il faut mettre des parenthèses. 
 - Il ne faut pas confondre les parenthèses et les accolades.`if(amount > 1000){console.log("Amount est supérieur à 1000");}`
-- Si il n'y a qu'un seule ligne de code exécuté après la condition, il n'est pas obligatoire d'avoir les accolades. Il est préférable de toujours les mettre.
+- Si il n'y a qu'un seule ligne de code exécuté après la condition, il n'est pas obligatoire d'avoir les accolades. Mais il est préférable de toujours les mettre.
 - **Opérateur ternaire : 3 parties :la question, la réponse si vrai, et la réponse si faux**
 - NaN = Not a Number
 - Attention, une variable créée dans une fonction n'est disponible qu'à l'intérieur de cette fonction. Pour qu'elle soit disponible partout il faut la déclarer en dehors `var a=1, b=2, result` (<-variable gobale) C'est la portée de la variable, le scope.
-  
-  
-  
-  
-  
-  
+## Chapitre 3 - Exploiter les objets et types de données
+- Un objet est une variable unique qui est capable de contenir plusieurs propriétés et plusieurs méthodes différentes.
+- Les informations contenues dans objet ne s'appellent plus des variables, mais des propriétés.
+- Dans un objet, on peut créer das propriétés mais aussi des fonctions.
+- Quand une function est associée à un objet, on ne l'appelle plus fonction mais méthode.
+- Le mot clé `this` fait référence à l'objet en cours d'utilisation.
+- La concaténation est prendre des chaînes de caractères et les joindre ensemble pour former une chaîne de caractères plus longue. exemple = `"2"+"7" = 27`
+- `Number` est une fonction native de javascript qui permet de convertir la donnée demandée.
+- `NaN` = Not a Number
+- `isNaN`= est-ce que la valeur peut être convertie en nombre ?
+- Le `!`dans le `if` a pour effet d'inverser les false en true et les true en false
+- L'objet `Math` est disponible nativement dans Javascript.
+- En Js, les mois sont comptés de 0 à 11, et non de 01 à 12.
+- `getDate()` récupère le jour dans le mois (de 1 à 31), tandis que `getDay()` récupère le jour dans la semaine (de 0 à 6).
+- `console.log(otherDate.getTime());` récupère la durée en millisecondes depuis le 1er janvier 1970 à la date déclarée.
+- Un Array est un type d'objet en JS.
+- à toutes les fonctions `get` correspond une fonction `set`.
+- Les Arrays utilisent un système basé sur des index, là où les objets utilisent un système basé plutôt sur des proporiétés (qu'on pouvait nommer).
+- Conseil : consulter documentation en ligne sur ce qui est possible de faire avec les différentes propriétés et méthodes des Array.
+- Dans les chaînes de caractères, le `\` permet d'échapper le caractère spécial `'` ou `"`.
+- Conseil : Consulter [objet string sur w3school](https://www.w3schools.com/jsref/jsref_obj_string.asp "je consulte") Mais aussi pour les autres types d'objets !
   
   
   
