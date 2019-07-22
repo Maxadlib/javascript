@@ -40,6 +40,7 @@
 - **Opérateur ternaire : 3 parties :la question, la réponse si vrai, et la réponse si faux**
 - NaN = Not a Number
 - Attention, une variable créée dans une fonction n'est disponible qu'à l'intérieur de cette fonction. Pour qu'elle soit disponible partout il faut la déclarer en dehors `var a=1, b=2, result` (<-variable gobale) C'est la portée de la variable, le scope.
+
 ## Chapitre 3 - Exploiter les objets et types de données
 - Un objet est une variable unique qui est capable de contenir plusieurs propriétés et plusieurs méthodes différentes.
 - Les informations contenues dans objet ne s'appellent plus des variables, mais des propriétés.
@@ -61,6 +62,7 @@
 - Conseil : consulter documentation en ligne sur ce qui est possible de faire avec les différentes propriétés et méthodes des Array.
 - Dans les chaînes de caractères, le `\` permet d'échapper le caractère spécial `'` ou `"`.
 - Conseil : Consulter [objet string sur w3school](https://www.w3schools.com/jsref/jsref_obj_string.asp "je consulte") Mais aussi pour les autres types d'objets !
+
 ## Chapitre 4 - Découvrir le Document Object Model
 - *Document* : C'est la page web. Le javascript comprend la page web comme une collection d'objets.
 - *Object* : `array`, `nombre`, `date`... ça peut être un titre de niveau 1, une liste.
@@ -74,10 +76,17 @@
 - `createTextNode` permet de créer des noeuds de type texte (de type 3)
 - `appendChild` permet de créer un enfant à un élément. exemple :`document.getElementById("trivia").appendChild(newHeading);`
 
-  
-  
-  
-  
+## Chapitre 5 - Travailler avec les évènements de Javascript
+- addEventListener pour surveiller les évènements. `element.addEventListener(event, function, useCapture)`
+- Dans vidéo , problème lors de la création de la fonction en ligne `alert('Bonjour ')`
+- l'objet `window`est l'objet le plus élevé en Javascript, le *top level object*. Même `document` est l'enfant de `window` (la fenêtre du navigateur).
+- onClick : utilisé par exemple sur `document` pour savoir quand on clique dans le document
+- onLoad : par exemple pour charger une fonction quand la page est chargée
+- onBlur : est déclenché quand on quitte le champs de formulaire.
+- onFocus : est déclenché lorsque le curseur est disponible dans le champs de formulaire.
+
+
+
     
 -----------  
 ## Markdown code

@@ -5,7 +5,7 @@
     <title>Simple Page</title>
 </head>
 <body>
-	<h1>Une simple page HTML</h1>    
+	<h1>Une simple page HTML</h1>
     	<p>
     	Ceci est une simple page HTML.
     	</p>
@@ -17,6 +17,16 @@
 		<li>Deux paragraphes</li>
 		<li>Une liste non ordonnée</li>
 	</ul>
-    <button id="unBouton">Cliquez-moi !</button>
+	<button id="unBouton">Cliquez-moi !</button>
+	<script>
+		var myButton = document.getElementById('unBouton');
+		// myButton.onclick = function(){
+		// 	alert('Bonjour !');
+		// };
+		function displayAlert(){
+			alert('Bonjour !');
+		};
+		myButton.addEventListener("click", displayAlert, false);
+	</script>
 </body>
 </html>

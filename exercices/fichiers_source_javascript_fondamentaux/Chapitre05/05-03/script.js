@@ -12,3 +12,5 @@ emailField.onblur = function() {
 		emailField.value = "Votre e-mail";
 	}
 };
+// pour le HTML5 placeholder dans HTML
+

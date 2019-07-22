@@ -1,10 +1,11 @@
 // Deux méthodes pour les timers - setTimeout() et SetInterval() (uique / répétitif)
 
 function simpleMessage() {
-	alert("Je suis une simple alerte !");
+	alert("Je suis une simple alerte avec le setTimeout !");
 }
 
 // settimeout est en milisecondes
+setTimeout(simpleMessage,5000);
 
 var myImage = document.getElementById("mainImage");
 
@@ -21,4 +22,12 @@ function changeImage() {
 }
 
 // setInterval est aussi en milisecondes
-//var imageInterval = setInterval(changeImage,5000);
+var imageInterval = setInterval(changeImage,3000);
+
+myImage.onmouseover = function(){
+	clearInterval(imageInterval);
+};
+
+myImage.onmouseout = function () {
+	imageInterval = setInterval(changeImage,3000);
+};
