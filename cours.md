@@ -80,11 +80,17 @@
 - addEventListener pour surveiller les évènements. `element.addEventListener(event, function, useCapture)`
 - Dans vidéo , problème lors de la création de la fonction en ligne `alert('Bonjour ')`
 - l'objet `window`est l'objet le plus élevé en Javascript, le *top level object*. Même `document` est l'enfant de `window` (la fenêtre du navigateur).
-- onClick : utilisé par exemple sur `document` pour savoir quand on clique dans le document
-- onLoad : par exemple pour charger une fonction quand la page est chargée
-- onBlur : est déclenché quand on quitte le champs de formulaire.
-- onFocus : est déclenché lorsque le curseur est disponible dans le champs de formulaire.
+- `onClick` : utilisé par exemple sur `document` pour savoir quand on clique dans le document
+- `onLoad` : par exemple pour charger une fonction quand la page est chargée
+- `onBlur` : est déclenché quand on quitte le champs de formulaire.
+- `onFocus` : est déclenché lorsque le curseur est disponible dans le champs de formulaire.
 
+## Chapitre 6 - Améliorer l'expérience utilisateur
+- `onsubmit` :Pour intercepter la soumission du formulaire. Fonctionne avec `return false` pour stopper la soumission ou `return true` pour l'autoriser.
+- `checked` est une propriété boléenne qui ne nécessite pas de préciser true ou false.
+- On peut accéder au style CSS avec la propriété `.style`, puis choisir par exemple `document.getElementById("tourSelection").style.display = "block";`.
+- On aurait pu déclarer initialement `display:none;` dans la feuille de style CSS, mais ce n'est pas considéré comme une bonne pratique car si l'internaute désactive le javascript, il aura quand même les cases à cocher non cachées. C'est le [progressive enhancement](https://code.i-harness.com/fr/q/9b6 "lien sur code.i-harness").
+- 
 
 
     
