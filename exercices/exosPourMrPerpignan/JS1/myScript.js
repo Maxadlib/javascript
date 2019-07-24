@@ -8,7 +8,7 @@ var paraId = document.createTextNode("Désignation de la personne : "+nom+" "+pr
 
 newParagraph.appendChild(paraId);
 
-document.getElementById("exo1").appendChild(newParagraph);
+document.getElementById("JS1_1").appendChild(newParagraph);
 
 console.log("Désignation de la personne : "+nom+" "+prenom);
 
@@ -23,7 +23,7 @@ var addition = document.createTextNode("Le résultat de l'addition est : "+nbre1
 
 newParagraph.appendChild(addition);
 
-document.getElementById("exo2").appendChild(newParagraph);
+document.getElementById("JS1_2").appendChild(newParagraph);
 
 // FIN Exercice 2
 // JS1 : Exercice 3
@@ -32,12 +32,11 @@ var valpoint = 10.5;
 
 var newParagraph = document.createElement("p");
 
-// var addition = document.createTextNode("Le salaire net de Mr. Durand est de : ("+points+" x "+valpoint+") - (("+points+" x "+valpoint+")/10) = "+((points*valpoint)-((points*valpoint)/10)+" €");
 var salaire = document.createTextNode("Le salaire net de Mr. Durand est de : ("+points+" x "+valpoint+") - (("+points+" x "+valpoint+")/10) = "+((points*valpoint)-((points*valpoint)/10))+" €");
 
 newParagraph.appendChild(salaire);
 
-document.getElementById("exo3").appendChild(newParagraph);
+document.getElementById("JS1_3").appendChild(newParagraph);
 
 // FIN Exercice 3
 // JS1 : Exercice 4
@@ -59,8 +58,21 @@ newParagraph1.appendChild(reponse1);
 newParagraph2.appendChild(reponse2);
 newParagraph3.appendChild(soustraction);
 
-document.getElementById("exo4a").appendChild(newParagraph1);
-document.getElementById("exo4b").appendChild(newParagraph2);
-document.getElementById("exo4c").appendChild(newParagraph3);
+document.getElementById("JS1_4a").appendChild(newParagraph1);
+document.getElementById("JS1_4b").appendChild(newParagraph2);
+document.getElementById("JS1_4c").appendChild(newParagraph3);
 
 // FIN Exercice 4
+// JS2 : Exercice 1
+var randomNumber = Math.round(Math.random()*100);
+console.log(randomNumber);
+
+var newParagraph = document.createElement("p");
+
+var random100 = document.createTextNode("Voici un nombre aléatoire entre 10 et 100 = "+randomNumber);
+
+newParagraph.appendChild(random100);
+
+document.getElementById("JS2_1").appendChild(newParagraph);
+
+// FIN Exercice 1
