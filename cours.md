@@ -90,7 +90,20 @@
 - `checked` est une propriété boléenne qui ne nécessite pas de préciser true ou false.
 - On peut accéder au style CSS avec la propriété `.style`, puis choisir par exemple `document.getElementById("tourSelection").style.display = "block";`.
 - On aurait pu déclarer initialement `display:none;` dans la feuille de style CSS, mais ce n'est pas considéré comme une bonne pratique car si l'internaute désactive le javascript, il aura quand même les cases à cocher non cachées. C'est le [progressive enhancement](https://code.i-harness.com/fr/q/9b6 "lien sur code.i-harness").
+
+## Chapitre 7 - Adopter les bonnes pratiques en Javascript
+- utiliser le camelCase, avec lettres, nombres, $ et _
+- essayer de donner du sens aux noms de variables.
+- Pareil pour les fonctions, et on commence par un verbe.
+- Toujours mettre les accolades pour if et cie
+- Toujours mettre le point-virgule à la fin des instructions.
+- Ne pas utiliser `document.write("Hello !);`, plutôt utiliser `createElement`, `createTextNode`, `happenChild`.
+- éviter le browser sniffing (détecter le navigateur), plutôt utiliser du `featureDetection`.
+- éviter `eval()`, trop dangereux car internaute pourrait insérer du code. Donc *eval() is evil*.
+- Ne pas utiliser les pseudo-protocole.
+- Pour minifier son code JS : [closure-compiler](https://closure-compiler.appspot.com/home "Je vais voir") Toujours garder une version non minifiée.
 - 
+
 
 
     
