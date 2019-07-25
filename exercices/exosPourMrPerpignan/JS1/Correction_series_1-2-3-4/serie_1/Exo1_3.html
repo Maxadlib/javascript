@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<meta charset="UTF-8"/>
+	</head>
+	
+	<body>
+	<script>
+		/* Déclaration de variables locales */
+		var nb_pts, val_pt, taux, sal_brut, sal_net, ret;
+
+		/* Initialisation des variables */
+		nb_pts = 400;
+		val_pt = 10.5;
+		taux = 0.1;
+		
+		/* Calculs */
+		sal_brut = nb_pts*val_pt;
+		ret = sal_brut*taux;
+		sal_net = sal_brut-ret
+		
+		/* Affichage des résultats */
+		document.write("Nombre de points : " + nb_pts + "</br>");
+		document.write("Valeur du point : " + val_pt + "</br>");
+		document.write("Taux de retenues : " + taux + "</br></br>");
+		document.write("Salaire Brut : " + sal_brut + "</br>");
+		document.write("Retenues : " + ret + "</br>");
+		document.write("Salaire Net : " + sal_net + "</br>");
+	</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<meta charset="UTF-8"/>
+	</head>
+	
+	<body>
+	<script>
+		/* Déclaration de variables locales */
+		var r1, r2, PI, S1, S2, dif;
+
+		/* Initialisation des variables */
+		r1 = 5.5;
+		r2 = 3.5;
+		
+		/* Calculs */
+		S1 = Math.PI*Math.pow(r1,2);
+		S2 = Math.PI*Math.pow(r2,2);
+		dif = Math.round((S1-S2)*100)/100;
+		
+		/* Affichage des résultats */
+		document.write("1ère surface : " + S1 + "</br>");
+		document.write("2ème surface : " + S2 + "</br>");
+		document.write("Différence entre les 2 surfaces : " + dif + "</br>");
+	</script>
+	</body>
+</html>

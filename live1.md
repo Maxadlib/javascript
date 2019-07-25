@@ -1,0 +1,14 @@
+**Live 1 - 25/07/2019**
+- DOM : relatif à la structure HTML et CSS
+- `var1 = Pierre, Heurtel;`
+- Simplement `document.write("Le résultat est :"+var1);`
+- `Math.pow(r1,2);` > puissance 2
+- ECMAScript 5 : 2009. Maintenant ECMAScript 10 (mais 6 la référence).
+- Déclaration de variable :`var`, `let`, ou constante(`Math.PI` par exemple). Privilégier `let` ?
+- let garde la valeur initiale, pas var. Utiliser `let`
+- Des animations dans projet
+- Javascript + framework = emploi
+- Série 3 : Les tests conditionnels
+- `parsein.prompt()`
+- `switch` et `case` "Paul" : et `break`
+- référenciel des i, else, for, forEach, while, do-while...

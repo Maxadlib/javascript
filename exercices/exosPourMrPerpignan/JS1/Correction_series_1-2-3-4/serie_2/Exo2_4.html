@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<meta charset="UTF-8"/>
+	</head>
+	
+	<body>
+	<script>
+		/* Déclaration des variables */
+		var txt1 = "pierre.heurtel@messagerie.com";
+		var pos1 = txt1.search("@");
+		var txt2 = txt1.slice(0,pos1);
+		var txt3 = txt2.toUpperCase();
+		var txt4 = txt3.replace("."," ");
+		
+		/* Affichage du résultat */
+		document.write("La réponse est : " + txt4);
+	</script>
+	</body>
+</html>
