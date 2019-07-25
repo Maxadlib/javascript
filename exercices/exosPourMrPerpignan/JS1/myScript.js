@@ -44,20 +44,19 @@ var ray1 = 5.5;
 var ray2 = 3.5;
 var surface1 = Math.PI*(ray1*ray1);
 var surface2 = Math.PI*(ray2*ray2);
-
+// création balise HTML -> HTMLParagraphElement
 var newParagraph1 = document.createElement("p");
 var newParagraph2 = document.createElement("p");
 var newParagraph3 = document.createElement("p");
-
-
+// création noeud texte
 var reponse1 = document.createTextNode("1ère surface = "+surface1);
 var reponse2 = document.createTextNode("2ème surface = "+surface2);
 var soustraction = document.createTextNode("Différence entre les 2 surfaces = "+(surface1-surface2));
-
+// inject noeud texte dans pbalise HTML
 newParagraph1.appendChild(reponse1);
 newParagraph2.appendChild(reponse2);
 newParagraph3.appendChild(soustraction);
-
+// inject le résultat dans le DOM (document)
 document.getElementById("JS1_4a").appendChild(newParagraph1);
 document.getElementById("JS1_4b").appendChild(newParagraph2);
 document.getElementById("JS1_4c").appendChild(newParagraph3);
