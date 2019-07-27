@@ -67,6 +67,42 @@
                         </script>
                     </p>
                 </div>
+            <div>
+                    <h2>Exercice 5</h2>
+                    <p>
+                        <script>
+                            var note = Math.round(Math.random()*20);
+                            console.log(note);
+                            var prenom = ["Julie","Paul","Grand Schtroumph","Batman"];
+                            var pnRandom = prenom[Math.round(Math.random()*3)];
+                            console.log(pnRandom);
+                            switch (pnRandom){
+                                case "Julie" :
+                                    document.write("Bienvenue "+pnRandom);
+                                if (note >= 12){
+                                    document.write(" Mention <i>Assez bien</i>");
+                                } else if (note >= 14){
+                                    document.write(" Mention <i>Bien</i>");
+                                } else if (note >= 16){
+                                    document.write(" Mention <i>Très bien</i>");
+                                }
+                                break;
+                                case "Paul" :
+                                    document.write("Bonjour "+pnRandom);
+                                if (note >= 12){
+                                    document.write(" Mention <i>Assez bien</i>");
+                                } else if (note >= 14){
+                                    document.write(" Mention <i>Bien</i>");
+                                } else if (note >= 16){
+                                    document.write(" Mention <i>Très bien</i>");
+                                }
+                                break;
+                                default:
+                                    document.write("A bientôt "+pnRandom);
+                            }
+                        </script>
+                    </p>
+                </div>
     </body>
     <script>
     </script>
