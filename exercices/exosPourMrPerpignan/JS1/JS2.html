@@ -19,14 +19,13 @@
             <h2>Exercice 2</h2>
             <p>
                 <script>
-                    var val1 = 6;
                     var val2 = 8;
 
-                    function produit(val1,val2){
-                        return val1*val2;
+                    function produit(randomNbr,val2){
+                        return randomNbr*val2;
                     };
 
-                    document.write("Le résultat du produit est : "+produit(val1,val2)+".");
+                    document.write("Le résultat du produit <i>"+randomNbr+" multiplié par "+val2+"</i> est : "+produit(randomNbr,val2)+".");
                 </script>
             </p>
         </div>
@@ -43,19 +42,19 @@
                 </p>
             </div>
             <div>
-                    <h2>Exercice 4</h2>
-                    <p>
-                        <script>
-                            var email = "pierre.heurtel@messagerie.com";
-                            var pos1 = email.search("@"); // on recherche @
-                            var txt2 = email.slice(0,pos1);// on créée un tableau à partir de 0 jusqu'à pos1 (la position de @)
-                            var txt3 = txt2.toUpperCase();// on met tout ne Maj
-                            var txt4 = txt3.replace("."," ");// on remplace . par un espace
-                            // Affichage du résultat
-                            document.write("Voici le nom et le prénom correspondants à l'email : "+txt4);
-                        </script>
-                    </p>
-                </div>
+                <h2>Exercice 4</h2>
+                <p>
+                    <script>
+                        var email = "pierre.heurtel@messagerie.com";
+                        var pos1 = email.search("@"); // on recherche @
+                        var txt2 = email.slice(0,pos1);// on créée un tableau à partir de 0 jusqu'à pos1 (la position de @)
+                        var txt3 = txt2.toUpperCase();// on met tout en Maj
+                        var txt4 = txt3.replace("."," ");// on remplace . par un espace
+                        // Affichage du résultat
+                        document.write("Voici le nom et le prénom correspondants à l'email : "+txt4);
+                    </script>
+                </p>
+            </div>
     </body>
     <script>
     </script>

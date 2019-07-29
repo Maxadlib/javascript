@@ -9,10 +9,10 @@
             <h2>Exercice 1</h2>
             <p>
                 <script>
-                var name1 = "Maxime";
-                var name2 = "Julie"
-                    
-
+                var name = "Julie";
+                    if (name == "Julie"){
+                        document.write("Bonjour "+name+" !");
+                    }
                 </script>
             </p>
         </div>
@@ -20,7 +20,13 @@
             <h2>Exercice 2</h2>
             <p>
                 <script>
-                    
+                    var name = "Julie";
+                    var name = "Schtrouphette";
+                        if (name == "Julie"){
+                            document.write("Bienvenue "+name+" !");
+                        } else {
+                            document.write("A bientôt !")
+                        }
                 </script>
             </p>
         </div>
@@ -28,7 +34,16 @@
                 <h2>Exercice 3</h2>
                 <p>
                     <script>
-
+                    var name = "Schtrouphette";
+                    var name = "Paul";
+                    var name = "Julie";
+                        if (name == "Julie"){
+                            document.write("Bienvenue "+name+" !");
+                        } else if (name == "Paul") {
+                            document.write("Bonjour "+name+" !")
+                        } else {
+                            document.write("A bientôt !")
+                        }
                     </script>
                 </p>
             </div>
@@ -36,7 +51,55 @@
                     <h2>Exercice 4</h2>
                     <p>
                         <script>
-                         
+                         var x = Math.round(Math.random()*100);
+                         document.write("Votre note est de "+ x+ "/100, c'est ");
+                         if (x <= 10){
+                            document.write("très faible...");
+                         } else if (x <= 30){
+                            document.write("faible.");
+                        } else if (x <= 60){
+                            document.write("moyen.");
+                        } else if (x <= 90){
+                            document.write("bien !");
+                         } else {
+                             document.write("très bien ! Bravo !");
+                         }
+                        </script>
+                    </p>
+                </div>
+            <div>
+                    <h2>Exercice 5</h2>
+                    <p>
+                        <script>
+                            var note = Math.round(Math.random()*20);
+                            console.log(note);
+                            var prenom = ["Julie","Paul","Grand Schtroumph","Batman"];
+                            var pnRandom = prenom[Math.round(Math.random()*3)];
+                            console.log(pnRandom);
+                            switch (pnRandom){
+                                case "Julie" :
+                                    document.write("Bienvenue "+pnRandom);
+                                if (note >= 12){
+                                    document.write(" Mention <i>Assez bien</i>");
+                                } else if (note >= 14){
+                                    document.write(" Mention <i>Bien</i>");
+                                } else if (note >= 16){
+                                    document.write(" Mention <i>Très bien</i>");
+                                }
+                                break;
+                                case "Paul" :
+                                    document.write("Bonjour "+pnRandom);
+                                if (note >= 12){
+                                    document.write(" Mention <i>Assez bien</i>");
+                                } else if (note >= 14){
+                                    document.write(" Mention <i>Bien</i>");
+                                } else if (note >= 16){
+                                    document.write(" Mention <i>Très bien</i>");
+                                }
+                                break;
+                                default:
+                                    document.write("A bientôt "+pnRandom);
+                            }
                         </script>
                     </p>
                 </div>
