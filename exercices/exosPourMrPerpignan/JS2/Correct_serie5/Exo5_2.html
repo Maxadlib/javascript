@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<meta charset="UTF-8"/>
+	</head>
+	
+	<!-- Début section body du script HTML -->
+	<body>
+
+		<!-- Début script JavaScript -->
+		<script>
+
+			/* Définition d'une fonction constructeur de nom Voiture */
+			var Voiture = function(modele) {
+				/* Attribut(s) de l'objet renseigné à l'instanciation */
+				this.modele = modele;
+			}
+			/* Instanciation d'un objet Peugeot 107 via le constructeur Voiture avec passage de paramètre */
+			var maVoiture = new Voiture("Peugeot 107");
+
+			/* Affichage de l'attribut modele de l'objet maVoiture */
+			document.write("Je possède une " + maVoiture.modele);
+
+		</script>
+
+	</body>
+
+</html>

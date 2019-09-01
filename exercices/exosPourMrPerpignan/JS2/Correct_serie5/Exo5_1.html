@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<meta charset="UTF-8"/>
+	</head>
+	
+	<body>
+	<script>
+	/* Déclaration de la 1ère variable sous forme d'objet */
+		var addit = 
+		{
+			X : 3,
+			Y : 5,
+			calcul:function()
+			{
+				return this.X + this.Y;
+			}
+		}
+	/* Affichage du 1er résultat */
+		document.write("Le résultat de l'addition est : " + addit.calcul() + "</br>");
+	
+	/* Déclaration 2ème variable et utilisation de la première */	
+		var mult =
+		{
+			Y : 10,
+			calcul:function()
+			{
+				return addit.calcul() * this.Y;
+			}
+		}
+	/* Affichage du résultat */	
+		document.write("Le résultat global du calcul est : " + mult.calcul());
+		
+	</script>
+	</body>
+</html>

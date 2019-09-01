@@ -9,7 +9,7 @@
             <h2>Exercice 1</h2>
             <p>
                 <script>
-                var name = "Julie";
+                let name = "Julie";
                     if (name == "Julie"){
                         document.write("Bonjour "+name+" !");
                     }
@@ -20,10 +20,10 @@
             <h2>Exercice 2</h2>
             <p>
                 <script>
-                    var name = "Julie";
-                    var name = "Schtrouphette";
-                        if (name == "Julie"){
-                            document.write("Bienvenue "+name+" !");
+                    var name1 = "Julie";
+                    // var name1 = "Schtrouphette";
+                        if (name1 == "Julie"){
+                            document.write("Bienvenue "+name1+" !");
                         } else {
                             document.write("A bientôt !")
                         }
@@ -34,13 +34,13 @@
                 <h2>Exercice 3</h2>
                 <p>
                     <script>
-                    var name = "Schtrouphette";
-                    var name = "Paul";
-                    var name = "Julie";
-                        if (name == "Julie"){
-                            document.write("Bienvenue "+name+" !");
-                        } else if (name == "Paul") {
-                            document.write("Bonjour "+name+" !")
+                    // let name2 = "Schtrouphette";
+                    let name2 = "Paul";
+                    // let name2 = "Julie";
+                        if (name2 == "Julie"){
+                            document.write("Bienvenue "+name2+" !");
+                        } else if (name2 == "Paul") {
+                            document.write("Bonjour "+name2+" !")
                         } else {
                             document.write("A bientôt !")
                         }
@@ -51,7 +51,7 @@
                     <h2>Exercice 4</h2>
                     <p>
                         <script>
-                         var x = Math.round(Math.random()*100);
+                         let x = Math.round(Math.random()*100);
                          document.write("Votre note est de "+ x+ "/100, c'est ");
                          if (x <= 10){
                             document.write("très faible...");
@@ -71,10 +71,10 @@
                     <h2>Exercice 5</h2>
                     <p>
                         <script>
-                            var note = Math.round(Math.random()*20);
+                            let note = Math.round(Math.random()*20);
                             console.log(note);
-                            var prenom = ["Julie","Paul","Grand Schtroumph","Batman"];
-                            var pnRandom = prenom[Math.round(Math.random()*3)];
+                            let prenom = ["Julie","Paul","Grand Schtroumph","Batman"];
+                            let pnRandom = prenom[Math.round(Math.random()*3)];
                             console.log(pnRandom);
                             switch (pnRandom){
                                 case "Julie" :

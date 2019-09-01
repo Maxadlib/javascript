@@ -9,9 +9,8 @@
             <h2>Exercice 1</h2>
             <p>
                 <script>
-                  var randomNbr = Math.round(Math.random()*90)+10;
+                  let randomNbr = Math.round(Math.random()*90)+10;
                  document.write("Un nombre aléatoire entre 10 et 100 : "+randomNbr);
-
                 </script>
             </p>
         </div>
@@ -19,42 +18,41 @@
             <h2>Exercice 2</h2>
             <p>
                 <script>
-                    var val2 = 8;
+                    let val2 = 8;
 
                     function produit(randomNbr,val2){
                         return randomNbr*val2;
                     };
-
                     document.write("Le résultat du produit <i>"+randomNbr+" multiplié par "+val2+"</i> est : "+produit(randomNbr,val2)+".");
                 </script>
             </p>
         </div>
         <div>
-                <h2>Exercice 3</h2>
-                <p>
-                    <script>
-                            var phrase = "Combien de caractères composent cette phrase ?";
-                            // function countChara(){
-                            //     return
-                            // };
-                            document.write("La phrase \""+phrase+"\" se compose de "+phrase.length+" caractères.<br />");
-                    </script>
-                </p>
-            </div>
-            <div>
-                <h2>Exercice 4</h2>
-                <p>
-                    <script>
-                        var email = "pierre.heurtel@messagerie.com";
-                        var pos1 = email.search("@"); // on recherche @
-                        var txt2 = email.slice(0,pos1);// on créée un tableau à partir de 0 jusqu'à pos1 (la position de @)
-                        var txt3 = txt2.toUpperCase();// on met tout en Maj
-                        var txt4 = txt3.replace("."," ");// on remplace . par un espace
-                        // Affichage du résultat
-                        document.write("Voici le nom et le prénom correspondants à l'email : "+txt4);
-                    </script>
-                </p>
-            </div>
+            <h2>Exercice 3</h2>
+            <p>
+                <script>
+                        let phrase = "Combien de caractères composent cette phrase ?";
+                        // function countChara(){
+                        //     return
+                        // };
+                        document.write("La phrase \""+phrase+"\" se compose de "+phrase.length+" caractères.<br />");
+                </script>
+            </p>
+        </div>
+        <div>
+            <h2>Exercice 4</h2>
+            <p>
+                <script>
+                    let email = "pierre.heurtel@messagerie.com";
+                    let pos1 = email.search("@"); // on recherche @
+                    let txt2 = email.slice(0,pos1);// on créée un tableau à partir de 0 jusqu'à pos1 (la position de @)
+                    let txt3 = txt2.toUpperCase();// on met tout en Maj
+                    let txt4 = txt3.replace("."," ");// on remplace . par un espace
+                    // Affichage du résultat
+                    document.write("Voici le nom et le prénom correspondants à l'email : "+txt4);
+                </script>
+            </p>
+        </div>
     </body>
     <script>
     </script>

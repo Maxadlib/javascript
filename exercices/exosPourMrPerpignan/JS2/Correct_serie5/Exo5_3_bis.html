@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<meta charset="UTF-8"/>
+	</head>
+	
+	<!-- Début section body du script HTML -->
+	<body onload="initialise()">
+		<p><input id="valeur" type="text"></p>
+		<button id="jeu" onclick="joue()" type="button">Jouer</button> <button id="init" onclick="initialise()" type="button" disabled>Initialiser!</button></p>
+		<p id="text"></p>
+
+		<!-- Script avec limite du nombre d'essais à 3 -->
+	
+		<script>
+			/* Déclaration des variables */
+			function afficheresult()
+			{
+				var tableau = [5,12,23,27,32,40,55,71,82,93];
+				var monTableau = [];
+				var i, resultat;
+				var saisie=parseInt(document.getElementById("valeur").value);
+			
+				/* Détermination de la position de la valeur saisie dans le tableau de valeurs*/
+				for (i=0; i<=9; i++)
+				{
+					resultat = Math.abs(saisie - tableau[i]);
+					monTableau[i] = resultat;
+				}
+			
+				/* Détermination de la valeur de l'écart mini*/
+				function monTableauMin(arr) 
+				{
+					return Math.min.apply(null, arr);
+				}
+			
+				/* Affichage de l'approche du résultat par rapport à la valeur saisie */
+				if (monTableauMin(monTableau)>=5)
+				{
+					document.getElementById("text").innerHTML="Valeur éloignée !";
+				}
+				else if (monTableauMin(monTableau)>=3)
+				{
+					document.getElementById("text").innerHTML="Valeur proche !";
+				}
+				else if (monTableauMin(monTableau)>=1)
+				{
+					document.getElementById("text").innerHTML="Valeur très proche !";
+				}
+				else if (monTableauMin(monTableau)==0)
+				{
+				document.getElementById("text").innerHTML="Gagnée !";
+				}
+			}
+			
+			/*Comptage du nombre d'essais*/
+			function joue() 
+			{
+				if(typeof(Storage) !== "undefined") 
+				{
+					if (localStorage.clickcount) 
+					{
+						localStorage.clickcount = Number(localStorage.clickcount)+1;
+					} 
+					else 
+					{
+						localStorage.clickcount = 1;
+					}
+						if (Number(localStorage.clickcount) <=3)
+						{
+							afficheresult();
+						} 
+						else 
+						{
+							document.getElementById("text").innerHTML="Perdu, vous avez effectué 3 essais !";
+							document.getElementById("init").disabled = false;
+							document.getElementById("jeu").disabled = true;
+						}
+				}
+				else
+				{
+					document.getElementById("text").innerHTML="Le jeu a rencontré un dysfonctionnement, réactualisez la page.";
+				}
+			}
+
+			/*initialisation du compteur*/
+			function initialise()
+			{
+				localStorage.clickcount=0
+				document.getElementById("valeur").value="";
+				document.getElementById("text").innerHTML="";
+				document.getElementById("init").disabled = true;
+				document.getElementById("jeu").disabled = false;
+			}
+		</script>
+
+	</body>
+
+</html>

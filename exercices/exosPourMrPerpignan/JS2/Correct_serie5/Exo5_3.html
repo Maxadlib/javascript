@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<meta charset="UTF-8"/>
+	</head>
+	
+	<!-- Début section body du script HTML -->
+	<body>
+
+		<!-- Début script JavaScript -->
+		<!-- Script sans limite du nombre d'essai à 3 -->
+	
+		<script>
+			/* Déclaration des variables */
+			var tableau = [5,12,23,27,32,40,55,71,82,93];
+			var monTableau = [];
+			var i, resultat;
+			
+			var saisie=42;
+			
+			/* Détermination de la position de la valeur saisie dans le tableau de valeurs*/
+			for (i=0; i<=9; i++)
+			{
+				resultat = Math.abs(saisie - tableau[i]);
+				monTableau[i] = resultat;
+			}
+			
+			/* Détermination de la valeur de l'écart mini*/
+			function monTableauMin(arr) 
+			{
+				return Math.min.apply(null, arr);
+			}
+			
+			/* Affichage de l'approche du résultat par rapport à la valeur saisie */
+			if (monTableauMin(monTableau)>=5)
+			{
+				document.write("Valeur éloignée !");
+			}
+			else if (monTableauMin(monTableau)>=3)
+			{
+				document.write("Valeur proche !");
+			}
+			else if (monTableauMin(monTableau)>=1)
+			{
+				document.write("Valeur très proche !");
+			}
+			else if (monTableauMin(monTableau)==0)
+			{
+				document.write("Gagnée !");
+			}
+		</script>
+
+	</body>
+
+</html>
