@@ -102,7 +102,8 @@
 - éviter `eval()`, trop dangereux car internaute pourrait insérer du code. Donc *eval() is evil*.
 - Ne pas utiliser les pseudo-protocole.
 - Pour minifier son code JS : [closure-compiler](https://closure-compiler.appspot.com/home "Je vais voir") Toujours garder une version non minifiée.
-- 
+## Les objets
+- Cours sur Openclassroom : [la-poo-kezako](https://openclassrooms.com/fr/courses/146276-tout-sur-le-javascript/143880-la-poo-kezako "Je vais voir") et [trop-classe-la-poo](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript/3196346-trop-classe-la-poo "Je vais voir")
 
 
 
