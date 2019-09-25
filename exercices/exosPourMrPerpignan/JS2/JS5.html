@@ -6,18 +6,28 @@
     </head>
     <body>
         <h1>Séquence 5</h1>
+        <section style="display:flex;">
+                <p>Valeur 1</p>
+                <input type="text" name="valeur1">
+                <p style="line-height:1rem;">Valeur 2</p>
+                <input type="text" name="valeur2">
+                <input type="submit" value="Je valide" name="valid" onclick="console.log(calcul.addition());">
+        </section>
         <div>
             <h2>Exercice 1</h2>
             <p>
                 <script>
-                    var addition = {
-                        x:5;
-                        y:6;
-                        calcul:function (){
-                            return this.x + this.y;
-                        };
-                    };
-                    document.write("Le résultat de l'addition est : " + addition.calcul() + "</br>");
+                    let calcul = {
+                        nbre1:7,
+                        nbre2:8,
+                        // nbre1:document.getElementsByName(valeur1),
+                        // nbre2:document.getElementsByName(valeur2),
+                        addition: function()
+                        {
+                            return this.nbre1+this.nbre2;
+                        }
+                    }
+                    console.log(calcul.addition());
                 </script>
             </p>
         </div>
